@@ -52,7 +52,6 @@ public class JwtService {
         return (username.equals(userDetails.getUsername()) && !isTokenExpired(token));
     }
 
-EntityManagerFactory
     public String generateToken(String userName){
         Map<String,Object> claims=new HashMap<>();
         return createToken(claims,userName);
